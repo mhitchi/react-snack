@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+
 
 class App extends React.Component {
 	render() {
 		return (
-			<div>My App Component</div>
+			<BrowserRouter>
+				<Routes>
+					<Route path="/" element={<Home/>}/>
+				</Routes>
+			</BrowserRouter>
 		);
 	}
 }
