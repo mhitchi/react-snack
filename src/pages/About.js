@@ -1,14 +1,14 @@
 import React from "react";
 import Nav from "../components/Nav";
 
-class Design extends React.Component {
+class About extends React.Component {
     render () {
         return (
             <>
-            This is the Design portfolio
+            This is an about me page
             </>
         )
     }
 }
 
-export default Design;
+export default About;
