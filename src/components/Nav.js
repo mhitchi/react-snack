@@ -1,5 +1,6 @@
 import React from "react";
-import "../css/Nav.css";
+import Nav from "../css/Nav.css";
+//import logo from "../assets/img/logo.png";
 
 
 class Nav extends React.Component {
@@ -7,7 +8,7 @@ class Nav extends React.Component {
         return (
             <div className="navigation">
                 <header role="banner">
-                        <img id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo"/>
+                        <img id="logo-main" src="../assets/img/logo.png" width="200" alt="Visit homepage" description="Graphic logo for independent contractor freelancer web developer and designer"/>
                     <nav id="navbar-primary" className="navbar navbar-default" role="navigation">
                         <div className="container-fluid">
                             <div className="navbar-header">
@@ -20,11 +21,10 @@ class Nav extends React.Component {
                             </div>
                             <div className="collapse navbar-collapse" id="navbar-primary-collapse">
                                 <ul className="nav navbar-nav">
-                                    <li className="active"><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
-                                    <li><a href="#">Link</a></li>
+                                    <li className="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Development</a></li>
+                                    <li><a href="#">Resume</a></li>
                                 </ul>
                             </div>
                         </div>
