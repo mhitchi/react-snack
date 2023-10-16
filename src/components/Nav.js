@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "../css/Style.css";
+import { Link } from "react-router-dom";
 //import logo from "../assets/img/logo.png";
 
 
@@ -21,10 +22,9 @@ class Nav extends React.Component {
                             </div>
                             <div className="collapse navbar-collapse" id="navbar-primary-collapse">
                                 <ul className="nav navbar-nav">
-                                    <li className="active"><a href="#">Home</a></li>
-                                    <li><a href="#">Design</a></li>
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Resume</a></li>
+                                    <li className="active"><Link to="/">Home</Link></li>
+                                    <li><Link to="/design">Design</Link></li>
+                                    <li><Link to="/dev">Development</Link></li>
                                 </ul>
                             </div>
                         </div>
