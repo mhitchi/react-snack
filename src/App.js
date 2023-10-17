@@ -15,6 +15,8 @@ class App extends React.Component {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home/>}/>
+					<Route path="/design" element={<Design/>}/>
+					<Route path="/dev" element={<Development/>}/>
 				</Routes>
 			</BrowserRouter>
 		);

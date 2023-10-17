@@ -6,6 +6,7 @@ class About extends React.Component {
     render () {
         return (
             <>
+            <Nav/>
             This is an about me page
             </>
         )

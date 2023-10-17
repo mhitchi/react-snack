@@ -1,7 +1,7 @@
 import React from "react";
 import Style from "../css/Style.css";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/logo.png";
+import img from "../assets/img/logo.png";
 
 
 class Nav extends React.Component {
@@ -9,7 +9,7 @@ class Nav extends React.Component {
         return (
             <div className="navigation">
                 <header role="banner">
-                        <img id="logo-main" src={ logo } width="200" alt="Visit homepage" description="Graphic logo for independent contractor freelancer web developer and designer"/>
+                        <img id="logo-main" src={ img } width="200" alt="Visit homepage" description="Graphic logo for independent contractor freelancer web developer and designer"/>
                     <nav id="navbar-primary" className="navbar navbar-default" role="navigation">
                         <div className="container-fluid">
                             <div className="navbar-header">
