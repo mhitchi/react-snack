@@ -6,7 +6,6 @@ class Design extends React.Component {
     render () {
         return (
             <>
-            <Nav/>
             This is the Design portfolio
             </>
         )

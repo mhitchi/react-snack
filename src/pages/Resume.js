@@ -6,7 +6,6 @@ class Resume extends React.Component {
     render () {
         return (
             <>
-            <Nav/>
             This is a resume;
             </>
         )

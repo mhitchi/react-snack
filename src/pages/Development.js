@@ -6,7 +6,6 @@ class Development extends React.Component {
     render () {
         return (
             <>
-            <Nav/>
             This is the Development portfolio
             </>
         )
