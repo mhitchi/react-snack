@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Style from "../css/Style.css";
+import "../css/Style.css"
 
 class Home extends React.Component {
     render () {
@@ -9,6 +9,7 @@ class Home extends React.Component {
             <React.Fragment>
                 <Nav/>
                 This is Home
+                
             </React.Fragment>
         )
     }

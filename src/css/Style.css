@@ -1,3 +1,4 @@
+/* start nav */
 header[role="banner"] {
     #logo-main {
       display: block;
@@ -21,3 +22,5 @@ header[role="banner"] {
       }
     }
   }
+
+/* end nav */
