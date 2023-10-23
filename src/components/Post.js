@@ -1,8 +1,8 @@
 import React from 'react';
-import "../css/Style.css";
+import "../css/Style.scss";
 import "../css/Blog.scss";
 
-className Posts extends React.Component {
+class Posts extends React.Component {
     // constructor initializes state
     constructor( props ) {
         super( props );
