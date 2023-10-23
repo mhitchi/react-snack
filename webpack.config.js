@@ -18,13 +18,17 @@ module.exports = {
 				use: 'babel-loader',
 			},
 			{
-				test: /\.(s(a|c)ss)$/,
+				test: /\.s[ac]ss$/i,
 				use: ['style-loader','css-loader', 'sass-loader']
 			 },
 			{
 				test: /\.(png|j?g|svg|gif)?$/,
 				use: 'file-loader'
-			}
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf)$/i,
+				type: 'asset/resource',
+			 },
 		]
 	},
 	plugins: [

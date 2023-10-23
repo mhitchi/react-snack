@@ -1,3 +1,10 @@
+@import url(./fonts.scss);
+
+
+$title-font: "Space Grotesk", sans-serif;
+$subtitle-font: "Inter", sans-serif;
+$italic-font: "Playfair Display", serif;
+
 /* start nav */
 header[role="banner"] {
     #logo-main {
@@ -21,6 +28,9 @@ header[role="banner"] {
           }
       }
     }
+  }
+  .navbar-nav li {
+    font-family: $subtitle-font;
   }
 
 /* end nav */
