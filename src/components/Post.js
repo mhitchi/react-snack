@@ -24,8 +24,12 @@ class Posts extends React.Component {
 
     renderPostItems() {
         const postData = this.state.posts;
+        if (this.state.posts) {
+            console.log("got posts")
+            console.log(this.state.posts)
+        }
         // check that we have any posts
-        if ( postData.length ) {
+        if ( this.state.posts ) {
             // if have posts, 
             return postData.map( post => (
                 <article className="post-card post tag-navigation tag-scroll-up tag-bootstrap tag-jquery tag-css">
@@ -54,7 +58,7 @@ class Posts extends React.Component {
     render() {
         return (
             <>
-                { this.state.loading && <p>Loading...</p>}
+                { this.state.loading && <p>Hold yer horses...</p>}
                 { this.renderPostItems() }
             </>
         )
