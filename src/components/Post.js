@@ -28,36 +28,34 @@ class Posts extends React.Component {
         if ( postData.length ) {
             // if have posts, 
             return postData.map( post => (
-                <div className="blog-header">
-						<div className="blog-article header-article">
-							<div className="blog-big__title">Esteem</div>
-							<div className="blog-menu small-title date">12.06.2021</div>
-						</div>
-					<div className="blog-article">
-						<img src="https://images.unsplash.com/photo-1496629062893-b0f566065d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
-						<h2>Sharing The <span>Widespread</span> Acclaim About Motivation</h2>
-						<div className="blog-detail">
-							<span>By Richard Carnation</span>
-							<span>5 Min Read</span>
-						</div>
-						<p>Blonde received widespread acclaim, with critics praising Ocean's introspective lyrics and the album's unconventional</p>
-						<a href="#">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="feather feather-corner-down-right" viewBox="0 0 24 24">
-								<path d="M15 10l5 5-5 5" />
-								<path d="M4 4v7a4 4 0 004 4h12" />
-							</svg>
-								See More
-						</a>
-					</div>
-				</div>
+                <article className="post-card post tag-navigation tag-scroll-up tag-bootstrap tag-jquery tag-css">
+                    <a className="post-card-image-link" href="/navigation-on-scroll/">
+                        <div className="post-card-image" style={{ backgroundImage: "url(https://storage.googleapis.com/kolosekblog/2018/01/navigation_scroll.png)"}}></div>
+                    </a>
+                        <div className="post-card-content">
+                            <a className="post-card-content-link" href="/navigation-on-scroll/">
+                                <header className="post-card-header">
+                                    <span className="post-card-tags">tags go here</span>
+                                    <h3 className="post-card-title">{post.title}</h3>
+                                </header>
+                                <section className="post-card-excerpt">
+                                    <p>{post.body}</p>
+                                </section>
+                            </a>
+                            <footer className="post-card-meta">
+                                <img className="author-profile-image" src="https://storage.googleapis.com/kolosekblog/2018/02/tatjana.jpg" alt="Tatjana B."/>
+                                <span className="post-card-author">{post.id}</span>
+                            </footer>
+                        </div>
+                </article>
             ) )
         }
     }
     render() {
         return (
-            <>
-            This is a post.
-            </>
+            <div>
+
+            </div>
         )
     }
 }
