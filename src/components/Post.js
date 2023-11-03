@@ -53,9 +53,10 @@ class Posts extends React.Component {
     }
     render() {
         return (
-            <div>
-
-            </div>
+            <>
+                { this.state.loading && <p>Loading...</p>}
+                { this.renderPostItems() }
+            </>
         )
     }
 }
